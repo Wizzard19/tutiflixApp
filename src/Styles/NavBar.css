@@ -1,0 +1,46 @@
+#myNavBar {
+	background-color: #0d253f;
+	color: #fafafa;
+	box-sizing: border-box;
+}
+
+.brand {
+	align-items: flex-start;
+	font-size: 40px;
+	letter-spacing: 7px;
+	font-weight: 600;
+	color: #fafafa;
+	transition: color 0.5s ease;
+}
+
+.brand:hover {
+	color: #117bf3;
+}
+
+.navBarItems {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-left: 400px;
+}
+
+.navBarList {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin: 0;
+}
+
+.navBarList li {
+	margin-right: 10px;
+	color: #fafafa;
+	transition: color 0.5s ease;
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+}
+
+.navBarList li:hover {
+	color: #117bf3;
+}

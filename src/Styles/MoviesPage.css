@@ -1,0 +1,23 @@
+.gridContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 82vw;
+}
+
+.elementGrid {
+	width: 70vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.searchBar {
+	margin: 10px;
+	width: 50vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 380px;
+}
