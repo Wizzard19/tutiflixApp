@@ -20,8 +20,6 @@ function MoviesPage() {
 			.then((res) => {
 				setMovies(res.results);
 				setLoading(false);
-				setTotalPages(res.total_pages);
-				setPage(currentPage);
 			});
 	}, [elementId, currentPage]);
 
@@ -68,7 +66,7 @@ function MoviesPage() {
 									title={movie.title}
 									options='movies'
 									elementId={movie.id}
-								/>
+								/>{' '}
 							</div>
 						))
 					) : (

@@ -10,7 +10,9 @@ const SERIES_URL = `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&l
 
 const GENRES_URL = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=es-es`;
 
-const MOVIES_DETAIL = `https://api.themoviedb.org/3/movie`;
+const MOVIES_DETAIL = `https://api.themoviedb.org/3/movie/`;
+
+const SERIES_DETAIL = `https://api.themoviedb.org/3/tv/`;
 
 export {
 	MOVIES_URL,
@@ -20,4 +22,5 @@ export {
 	GENRES_URL,
 	API_KEY,
 	MOVIES_DETAIL,
+	SERIES_DETAIL,
 };

@@ -1,7 +1,7 @@
 #cardContainer {
 	margin: 1rem;
 	width: 19rem;
-	height: 40rem;
+	height: 30rem;
 	transform: scale(1);
 	transition: 1.5s ease;
 	display: flex;
@@ -15,7 +15,7 @@
 }
 
 .figureContainer {
-	height: 28rem;
+	height: 20rem;
 }
 
 .card-actions {

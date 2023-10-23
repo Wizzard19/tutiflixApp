@@ -11,9 +11,9 @@ function Card(props) {
 			<div className='card-body'>
 				<h2 className='card-title'>{props.title}</h2>
 				<div className='card-actions justify-end cardBtn'>
-					{/*<div className='badge badge-outline'>Fashion</div>
-					<div className='badge badge-outline'>Products</div>*/}
-					<Link to={`/detail/${props.id}`} className='btnAction'>
+					<Link
+						to={`/detail/${props.options}/${props.elementId}`}
+						className='btnAction'>
 						Show More
 					</Link>
 				</div>

@@ -17,7 +17,7 @@ function Public() {
 					<Route path='/' element={<HomePage />} />
 					<Route path='/movies/page/:currentPage' element={<MoviesPage />} />
 					<Route path='/series/page/:currentPage' element={<SeriesPage />} />
-					<Route path='/detail:id' element={<DetailPage />} />
+					<Route path='/detail/:options/:elementId' element={<DetailPage />} />
 					<Route path='*' element={<NotFound404 />} />
 				</Routes>
 				<Footer />
