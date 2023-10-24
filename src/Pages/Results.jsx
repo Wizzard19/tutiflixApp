@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {
 	API_IMG,
 	API_KEY,
@@ -40,6 +40,11 @@ function Results() {
 
 	return (
 		<div>
+			<div className='backBtn'>
+				<button className='btn btn-outline btn-accent'>
+					<Link to='/movies/page/1'>Back</Link>
+				</button>
+			</div>
 			<p className='searchCardTitle'>Movies</p>
 			<section className='elementGrid'>
 				{moviesData.slice(0, 12).map((movie) => (
@@ -63,6 +68,12 @@ function Results() {
 					/>
 				))}
 			</section>
+
+			<div className='backBtn'>
+				<button className='btn btn-outline btn-accent backBtn'>
+					<Link to='/movies/page/1'>Back</Link>
+				</button>
+			</div>
 		</div>
 	);
 }
