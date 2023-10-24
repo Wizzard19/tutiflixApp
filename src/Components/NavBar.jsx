@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import '../Styles/NavBar.css';
 
 export function NavBar() {
-	const handleWhat = console.log('this?');
-
 	return (
 		<div className='navbar bg-base-100' id='myNavBar'>
 			<div className='brand'>

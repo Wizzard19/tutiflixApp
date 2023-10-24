@@ -5,6 +5,7 @@ import '../Styles/MoviesPage.css';
 import Loading from '../Components/Loading';
 import NotFound404 from './NotFound404';
 import { useParams, useNavigate } from 'react-router-dom';
+import SearchBar from '../Components/SearchBar';
 
 function MoviesPage() {
 	const [movies, setMovies] = useState([]);
@@ -24,14 +25,6 @@ function MoviesPage() {
 			});
 	}, [elementId, currentPage]);
 
-	const handleSearch = (event) => {
-		if (event.key === 'Enter') {
-			setSearchMovie(event.target.value.toLowerCase());
-			console.log(searchMovie);
-			event.target.value = '';
-		}
-	};
-
 	function handleNextPage() {
 		const nextPage = parseInt(currentPage) + 1;
 		navigate(`/movies/page/${nextPage}`);
@@ -48,12 +41,9 @@ function MoviesPage() {
 
 	return (
 		<>
-			<input
-				type='text'
-				placeholder='Type here'
-				className='input input-bordered searchBar'
-				onKeyDown={handleSearch}
-			/>
+			<div>
+				<SearchBar />
+			</div>
 			<div className='gridContainer'>
 				<div className='elementGrid'>
 					{loading ? (

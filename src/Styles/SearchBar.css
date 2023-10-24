@@ -1,0 +1,7 @@
+.searchBtn {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	left: 70rem;
+	bottom: 2.5rem;
+}

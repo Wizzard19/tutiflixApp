@@ -7,6 +7,7 @@ import NavBar from '../Components/NavBar';
 import NotFound404 from '../Pages/NotFound404';
 import DetailPage from '../Pages/DetailPage';
 import Footer from '../Components/Footer';
+import Results from '../Pages/Results';
 
 function Public() {
 	return (
@@ -18,6 +19,7 @@ function Public() {
 					<Route path='/movies/page/:currentPage' element={<MoviesPage />} />
 					<Route path='/series/page/:currentPage' element={<SeriesPage />} />
 					<Route path='/detail/:options/:elementId' element={<DetailPage />} />
+					<Route path='/results/:query' element={<Results />} />
 					<Route path='*' element={<NotFound404 />} />
 				</Routes>
 				<Footer />

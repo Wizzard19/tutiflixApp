@@ -1,0 +1,11 @@
+.elementGrid {
+	display: grid;
+	margin: 5rem;
+}
+
+.searchCardTitle {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	z-index: 10;
+}

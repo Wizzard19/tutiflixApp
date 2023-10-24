@@ -5,6 +5,7 @@ import '../Styles/MoviesPage.css';
 import Loading from '../Components/Loading';
 import NotFound404 from './NotFound404';
 import { useParams, useNavigate } from 'react-router-dom';
+import SearchBar from '../Components/SearchBar';
 
 function SeriesPage() {
 	const [series, setSeries] = useState([]);
@@ -47,12 +48,9 @@ function SeriesPage() {
 	console.log(series);
 	return (
 		<>
-			<input
-				type='text'
-				placeholder='Type here'
-				className='input input-bordered searchBar'
-				onKeyDown={handleSearch}
-			/>
+			<div>
+				<SearchBar />
+			</div>
 			<div className='gridContainer'>
 				<div className='elementGrid'>
 					{loading ? (
