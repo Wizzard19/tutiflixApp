@@ -36,12 +36,14 @@ function DetailPage() {
 			) : (
 				<div className='card card-side bg-base-100 shadow-xl'>
 					<img
-						className='backgroundImg'
+						className='detailImg'
 						src={API_IMG + details.backdrop_path}
 						alt={details.id}
 					/>
 					<div className='card-body'>
-						<h2 className='card-title detailTitle'>{details.title}</h2>
+						<h2 className='card-title detailTitle'>
+							{details.title || details.name}
+						</h2>
 						{details.overview ? (
 							<div>
 								<p className='detailOverview'>{details.overview}</p>
@@ -60,7 +62,7 @@ function DetailPage() {
 													className='companyImg'
 												/>
 											) : (
-												<p>No company name available</p>
+												<p>No company image available</p>
 											)}
 
 											{details.production_companies[1] &&
@@ -100,7 +102,7 @@ function DetailPage() {
 
 						<div className='card-actions justify-end'>
 							<button className='btn btn-outline btn-accent'>
-								<Link to={`/${options}/page/${elementId}`}>Back</Link>
+								<Link to={`/${options}/page/1`}>Back</Link>
 							</button>
 						</div>
 					</div>

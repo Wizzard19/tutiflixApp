@@ -44,7 +44,7 @@ function SeriesPage() {
 			navigate(`/series/page/${prevPage}`);
 		}
 	}
-
+	console.log(series);
 	return (
 		<>
 			<input
@@ -66,6 +66,7 @@ function SeriesPage() {
 									title={series.name}
 									options='series'
 									elementId={series.id}
+									rating={series.vote_average}
 								/>
 							</div>
 						))

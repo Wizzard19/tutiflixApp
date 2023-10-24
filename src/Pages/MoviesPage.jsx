@@ -20,6 +20,7 @@ function MoviesPage() {
 			.then((res) => {
 				setMovies(res.results);
 				setLoading(false);
+				console.log(movies);
 			});
 	}, [elementId, currentPage]);
 
@@ -66,6 +67,7 @@ function MoviesPage() {
 									title={movie.title}
 									options='movies'
 									elementId={movie.id}
+									rating={movie.vote_average}
 								/>{' '}
 							</div>
 						))

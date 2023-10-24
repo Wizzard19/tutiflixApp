@@ -4,6 +4,8 @@
 
 .textArea {
 	align-items: center;
+	text-align: center;
+	margin-left: 30px;
 }
 
 .hero {

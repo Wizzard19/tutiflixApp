@@ -11,6 +11,7 @@ function Card(props) {
 			<div className='card-body'>
 				<h2 className='card-title'>{props.title}</h2>
 				<div className='card-actions justify-end cardBtn'>
+					<div className='ratings'>Rating: {props.rating}</div>
 					<Link
 						to={`/detail/${props.options}/${props.elementId}`}
 						className='btnAction'>
