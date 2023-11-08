@@ -6,7 +6,7 @@ import {
 	MOVIES_SEARCH,
 	SERIES_SEARCH,
 } from '../Config/TmdbAPI';
-import SearchCard from '../Components/searchCard';
+import SearchCard from '../Components/SearchCard';
 import '../Styles/Results.css';
 
 function Results() {

@@ -13,6 +13,7 @@ function DetailPage() {
 	const { elementId, options } = useParams();
 	const [details, setDetails] = useState({});
 	const [loading, setLoading] = useState(true);
+	const [favortes, setFavorites] = useState([]);
 	const apiType = options === 'movies' ? MOVIES_DETAIL : SERIES_DETAIL;
 
 	useEffect(() => {
@@ -27,7 +28,10 @@ function DetailPage() {
 			});
 	}, [elementId, apiType]);
 
-	console.log(options);
+	useEffect(() => {
+		const storeFavorites = JSON.parse(localStorage.getItem('favorites'));
+		storeFavorites && setFavorites(storeFavorites);
+	}, []);
 
 	return (
 		<div className='detailContainer'>
